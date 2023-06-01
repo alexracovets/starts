@@ -1,0 +1,668 @@
+@font-face {
+    font-family: "Exo Soft Bold Italic";
+    src: url(../fonts/ExoSoft-BoldItalic.woff2);
+}
+
+@font-face {
+    font-family: "Museo Sans 300 Light";
+    src: url(../fonts/MuseoSansCyrl-300.woff);
+}
+
+@font-face {
+    font-family: "Museo Sans 500 Medium";
+    src: url(../fonts/MuseoSansCyrl-500.woff);
+}
+
+@font-face {
+    font-family: "Museo Sans 900 Medium";
+    src: url(../fonts/MuseoSansCyrl-900.woff);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #161636;
+    color: white;
+    font-size: 26px;
+    font-family: "Exo Soft Bold Italic";
+}
+
+button,
+a {
+    cursor: pointer;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-family: "Museo Sans 300 Light";
+}
+
+header {
+    margin: 10px 50px;
+}
+
+.header-logo {
+    max-width: 144px;
+}
+
+.runner-wrapper {
+    max-width: 555px;
+}
+
+.conteiner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+    overflow: hidden;
+}
+
+.between-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.between-left,
+.between-rigth {
+    width: 50%;
+}
+
+.runner-wrapper {
+    max-width: 555px;
+}
+
+.action-time {
+    font-size: 38px;
+    color: #ff5f01;
+    text-align: center;
+}
+
+h1 {
+    font-size: 102px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1 img {
+    width: 315px;
+    display: inline;
+    padding-left: 30px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+h1 span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all {
+    font-size: 29px;
+    text-align: center;
+}
+
+.all span,
+.item-text span {
+    white-space: pre;
+}
+
+button.aff-btn {
+    max-width: 300px;
+    width: 100%;
+    background-color: #17a44e;
+    color: white;
+    border: none;
+    font-size: 23px;
+    font-family: "Museo Sans 500 Medium";
+    padding: 30px;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.sub-first-text {
+    font-size: 42px;
+    color: #ff5f01;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 55px auto;
+}
+
+h2 {
+    font-size: 100px;
+    line-height: 110px;
+    text-transform: uppercase;
+    max-width: 1024px;
+    margin: 60px auto;
+    margin-top: 150px;
+}
+
+section.second {
+    margin-bottom: 80px;
+}
+
+
+.toggle-bar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item-tittle {
+    font-size: 44px;
+    line-height: 34px;
+    font-family: "Museo Sans 900 Medium";
+    padding-top: 50px;
+    position: relative;
+    cursor: pointer;
+    padding-right: 54px;
+}
+
+.toggle-bar .item {
+    position: relative;
+}
+
+.toggle-bar .item::before {
+    content: "+";
+    position: absolute;
+    font-size: 50px;
+    color: #ff5f01;
+    font-family: "Museo Sans 900 Medium";
+    right: 20px;
+    bottom: 0px;
+    background-image: none;
+}
+
+.toggle-bar .item.active::before {
+    content: "";
+    width: 27px;
+    height: 7px;
+    right: 20px;
+    bottom: 0px;
+    background-image: url(../img/dash.svg);
+}
+
+hr {
+    color: #17a44e;
+    border-color: #17a44e;
+    border-style: ridge;
+}
+
+.item-text {
+    position: relative;
+    display: none;
+}
+
+
+
+.item-text p {
+    font-size: 34px;
+    padding-right: 56px;
+}
+
+section.third h2 {
+    max-width: 1180px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.step {
+    position: relative;
+    max-width: 490px;
+}
+
+.step .step-text {
+    position: absolute;
+    top: 380px;
+    font-size: 34px;
+    color: white;
+    right: 0px;
+    font-family: "Museo Sans 300 Light";
+    max-width: 380px;
+}
+
+.step .step-text span {
+    font-family: "Museo Sans 900 Medium";
+}
+
+.step:nth-of-type(2) .step-text {
+    top: 345px;
+}
+
+.step:nth-of-type(3) .step-text {
+    top: 332px;
+}
+
+.gl_hf {
+    font-size: 70px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+section.fourth {
+    margin-top: 120px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    font-family: "Museo Sans 300 Light";
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.action-time.mob {
+    display: none;
+}
+
+.footer-rigth {
+    border-bottom: 1px solid white;
+}
+
+
+.bx-wrapper {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
+a.bx-prev,
+a.bx-next {
+    display: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: none;
+    background-image: url(../img/bx-control.svg);
+    width: 22px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background-image: url(../img/bx-control-active.svg);
+    background-color: transparent;
+}
+
+.action-time.mob {
+    padding-top: 50px;
+}
+.footer-rigth a {
+    text-decoration: none;
+}
+
+
+
+
+/* POPUP */
+
+.popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pop-wrapper {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #17a44e;
+    border-radius: 8px;
+    padding: 50px 60px 30px 60px;
+}
+
+.pop-name {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: white;
+}
+
+input,
+select {
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px 0px 18px 30px;
+    border: none;
+    margin: 3px auto;
+    font-family: "Museo Sans 300 Light";
+    font-size: 22px;
+    color: #2c334a;
+}
+
+input.error {
+    border: 2px solid #d92632;
+}
+
+.password-wrapper,
+.social-wrapper,
+.term-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button.gen-password {
+    padding: 19px;
+    font-size: 22px;
+    border: none;
+    background-color: #DDD;
+    color: #2c334a;
+    border-radius: 0px 8px 8px 0px;
+    position: relative;
+    font-family: "Museo Sans 300 Light";
+}
+
+button.gen-password.error {
+    background-color: #fd5f1f;
+    color: white;
+}
+
+input.input-pass {
+    border-radius: 8px 0px 0px 8px;
+    padding-right: 40px
+}
+
+.reg-login input.input-pass,
+.pass-changes input.input-pass {
+    border-radius: 8px;
+    padding-right: 40px
+}
+
+.reg-login .password-wrapper,
+.pass-changes .password-wrapper {
+    position: relative;
+}
+
+.pass-changes .password-wrapper::before,
+.reg-login .password-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 26px;
+    background-image: url(../img/pass-before.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 20px;
+    top: 23px;
+
+}
+
+button.gen-password::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 26px;
+    background-image: url(../img/pass-before.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -40px;
+    top: 18px;
+}
+
+select.social-select {
+    width: 234px;
+    margin-right: 5px;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.select-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 26px;
+    background-image: url(../img/select.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    right: 16px;
+    top: 18px;
+}
+
+button.pop-btn {
+    display: block;
+    border-radius: 8px;
+    border: none;
+    background-color: #161636;
+    color: white;
+    max-width: 340px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Museo Sans 500 Medium";
+    margin-top: 35px;
+}
+
+.to-login {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+a.login_ankor {
+    font-size: 16px;
+    color: white;
+    font-family: "Museo Sans 300 Light";
+}
+
+input#reg-checkbox {
+    width: 27px;
+    height: 27px;
+    border: none;
+    border-radius: 0;
+    background-color: white;
+    margin-right: 20px;
+}
+
+label.check-label {
+    font-size: 15px;
+    font-family: "Museo Sans 300 Light";
+}
+
+a.term-ankor {
+    color: white;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.error-block {
+    background-color: #fd5f1f;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 16px;
+    font-family: "Museo Sans 300 Light";
+}
+
+.reg-uptext {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Museo Sans 300 Light";
+    margin-bottom: 20px;
+}
+
+.reg-subtext {
+    font-size: 22px;
+    font-family: "Museo Sans 500 Medium";
+}
+
+.reg-done_text {
+    background-color: #161636;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+
+span.tire img {
+    width: 27px;
+    height: 7px;
+    margin-bottom: 7px;
+    margin-right: 12px;
+}
+
+
+
+
+
+
+@media(max-width:740px) {
+    .pop-wrapper {
+        margin: 0 20px;
+    }
+}
+
+@media(max-width:580px) {
+    .pop-wrapper {
+        padding: 50px 15px 30px 15px;
+    }
+
+    input,
+    select {
+        font-size: 16px;
+        padding: 7px;
+        padding-left: 18px;
+    }
+
+    button.gen-password {
+        padding: 7px;
+        font-size: 16px;
+    }
+
+    button.gen-password::before {
+        width: 22px;
+        height: 19px;
+        left: -28px;
+        top: 7px;
+    }
+
+    .select-wrapper::before {
+        width: 18px;
+        height: 22px;
+        right: 16px;
+        top: 6px;
+    }
+
+    select.social-select {
+        width: 144px;
+    }
+
+    button.pop-btn {
+        font-size: 22px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    a.login_ankor {
+        font-size: 12px;
+    }
+
+    label.check-label {
+        font-size: 9px;
+    }
+
+    input#reg-checkbox {
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+    }
+
+    .pop-name {
+        font-size: 30px;
+        padding-bottom: 25px;
+    }
+
+    .reg-login .password-wrapper::before,
+    .pass-changes .password-wrapper::before {
+        width: 24px;
+        height: 20px;
+        right: 14px;
+        top: 10px;
+    }
+
+    input.input-pass {
+        padding-right: 30px;
+    }
+
+    .close {
+        width: 22px;
+    }
+
+    .reg-uptext,
+    .reg-subtext {
+        font-size: 16px;
+    }
+}
+
+/* POPUP  END */
+
+
+.fine {
+    font-family: "Museo Sans 300 Light";
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 10px;
+}
+.desc-slider {
+    overflow: overlay auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.desc-slider img {
+    width: 1340px;
+}
+@media(max-width:1024px){
+    .desc-slider img {
+        margin-left: -110px;
+    }
+    .desc-slider {
+        overflow: overlay;
+        display: flex;
+        justify-content: flex-start;
+    }
+}
